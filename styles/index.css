@@ -1,89 +1,145 @@
-/* index.css 메인 첫 페이지의 <main> */
-main {}
-main .ad_wrap {}
-main .ad_wrap .ad_container {}
-main .ad_wrap .ad_container .ad {
+/* index.css 메인 첫 페이지의 <#wrap main> */
+#wrap main {}
+#wrap main .ad_wrap {}
+#wrap main .ad_wrap .ad_container {}
+#wrap main .ad_wrap .ad_container .ad {
     display:none;/* 모두 숨기기 */
     height:800px;
     background-position:center;
     position:relative;
 }
-main .ad_wrap .ad_container .ad .ad_txt {
+#wrap main .ad_wrap .ad_container .ad .ad_txt {
     background-color:yellow;
     width:1280px; /* margin:0 auto; */
     position:absolute; bottom:105px;
     left:50%; transform:translateX(-50%);
     /* absolute로 위치 설정 시 요소를 가운데 배치하려면 left:50%와 translate(-50%)를 함께 이용해야 배치할 수 있다. 단, 요소가 absolute가 아닌 평범한 요소라면 가운데 배치 시 margin:0 auto를 사용하면 된다. */
 }
-main .ad_wrap .ad_container .ad .ad_txt h2 {
+#wrap main .ad_wrap .ad_container .ad .ad_txt h2 {
     /* font-size:;
     font-weight:; */
 }
-main .ad_wrap .ad_container .ad .ad_txt p {
+#wrap main .ad_wrap .ad_container .ad .ad_txt p {
     /* line-height:; */
 }
-main .ad_wrap .ad_btn {
+#wrap main .ad_wrap .ad_btn {
     text-align:center;
     padding:34px 0;
 }
-main .ad_wrap .ad_btn #ad_prev {margin-right:10px;}
-main .ad_wrap .ad_btn #ad_prev img {}
-main .ad_wrap .ad_btn #ad_next {transform:scaleX(-1);}
-main .ad_wrap .ad_btn #ad_next img {}
+#wrap main .ad_wrap .ad_btn #ad_prev {margin-right:10px;}
+#wrap main .ad_wrap .ad_btn #ad_prev img {}
+#wrap main .ad_wrap .ad_btn #ad_next {transform:scaleX(-1);}
+#wrap main .ad_wrap .ad_btn #ad_next img {}
 /* ===================2. 광고개별영역 */
-main .ad_wrap .ad_container .ad1 {
+#wrap main .ad_wrap .ad_container .ad1 {
     display:block;
     background-image:url(../images/ad_01.jpg);
 }
-main .ad_wrap .ad_container .ad2 {}
-main .ad_wrap .ad_container .ad3 {}
-main .ad_wrap .ad_container .ad4 {}
-main .ad_wrap .ad_container .ad5 {}
+#wrap main .ad_wrap .ad_container .ad2 {}
+#wrap main .ad_wrap .ad_container .ad3 {}
+#wrap main .ad_wrap .ad_container .ad4 {}
+#wrap main .ad_wrap .ad_container .ad5 {}
 /* ==========================2. 뉴스&공지사항 */
-main .news_all {text-align:center;}
-main .news_all h2 {}
-main .news_all > p {}
-main .news_all .news_wrap {
+#wrap main .news_all {text-align:center;}
+#wrap main .news_all h2 {}
+#wrap main .news_all > p {}
+#wrap main .news_all .news_wrap {
     border:5px solid red;
     width:1370px; overflow:hidden; margin:0 auto;
 }
-main .news_all .news_wrap .news_container {
+#wrap main .news_all .news_wrap .news_container {
     border:5px solid blue;
     display:flex; flex-flow:row nowrap;
     width:max-content;
     text-align:left;
 }
-main .news_all .news_wrap .news_container .news {
+#wrap main .news_all .news_wrap .news_container .news {
     background-color:yellow;
     width:311px; height:287px;
     margin-right:42px;
     border:1px solid #ccc;
     position:relative;
 }
-main .news_all .news_wrap .news_container .news:hover {
+#wrap main .news_all .news_wrap .news_container .news:hover {
     border:1px solid #0000ff;
 }
-main .news_all .news_wrap .news_container .news a {}
-main .news_all .news_wrap .news_container .news a p {}
-main .news_all .news_wrap .news_container .news a p img {}
-main .news_all .news_wrap .news_container .news a h3 {}
-main .news_all .news_wrap .news_container .news .date {
+#wrap main .news_all .news_wrap .news_container .news a {}
+#wrap main .news_all .news_wrap .news_container .news a p {}
+#wrap main .news_all .news_wrap .news_container .news a p img {}
+#wrap main .news_all .news_wrap .news_container .news a h3 {}
+#wrap main .news_all .news_wrap .news_container .news .date {
     position:absolute; bottom:20px; left:20px;
 }
-main .news_all .news_wrap .news_btn {}
-main .news_all .news_wrap .news_btn #news_prev {}
-main .news_all .news_wrap .news_btn #news_prev img {}
-main .news_all .news_wrap .news_btn #news_next {}
-main .news_all .news_wrap .news_btn #news_next img {}
-main .news_all .all_news {
+#wrap main .news_all .news_wrap .news_btn {}
+#wrap main .news_all .news_wrap .news_btn #news_prev {}
+#wrap main .news_all .news_wrap .news_btn #news_prev img {}
+#wrap main .news_all .news_wrap .news_btn #news_next {}
+#wrap main .news_all .news_wrap .news_btn #news_next img {}
+#wrap main .news_all .all_news {
     border:1px solid #000;
     padding:20px 60px;
     display:flex;
     width:max-content; margin:20px auto 50px;
 }
-main .news_all .all_news img {}
-main .news_all .all_news em {}
+#wrap main .news_all .all_news img {}
+#wrap main .news_all .all_news em {}
 /* ===============================all_news 버튼 hover 효과 모음  */
-main .news_all .all_news:hover {background:#000;}
-main .news_all .all_news:hover img {filter:invert(100%);}
-main .news_all .all_news:hover em {color:#fff;}
+#wrap main .news_all .all_news:hover {background:#000;}
+#wrap main .news_all .all_news:hover img {filter:invert(100%);}
+#wrap main .news_all .all_news:hover em {color:#fff;}
+/* =====================3. 삼립스튜디오 */
+#wrap main .studio_wrap {
+    position:relative;/* open absolute의 기준 부모 대상 */
+    text-align:center;
+}
+#wrap main .studio_wrap h2 {}
+#wrap main .studio_wrap p {}
+/* =====================3. 삼립스튜디오 - 유튜브 채널 미리보기 */
+#wrap main .studio_wrap .studio_list {
+    width:1370px; margin:80px auto;
+    display:flex; flex-flow:row wrap;
+    justify-content:space-between;
+}
+#wrap main .studio_wrap .studio_list a {
+    margin-bottom:50px;
+}
+#wrap main .studio_wrap .studio_list a img {}
+/* =====================3. 삼립스튜디오 - 유튜브 채널 OPEN 영역 */
+#wrap main .studio_wrap .studio_open {
+    background-color:rgba(0,0,0,0.8);
+    position:absolute; left:0; top:0;
+    /* absolute가 적용된 대상은 그 대상이 block이어도 자동으로 inline-block처럼 자식의 내용만큼만 크기를 인식하기 때문에 별도의 width 크기를 반드시 설정해야 한다.(fixed 동일) */
+    width:100%; height:100vh;
+    display:none;/* 초기 숨기기(클릭할때만 보이도록) */
+}
+#wrap main .studio_wrap .studio_open .open_container {
+    height:100%;
+    display:flex; flex-flow:column nowrap;
+    justify-content:center; align-items:center;
+}
+#wrap main .studio_wrap .studio_open .open_container .close {
+    color:#fff;
+    width:900px; text-align:right;
+}
+#wrap main .studio_wrap .studio_open .open_container .youtube {}
+#wrap main .studio_wrap .studio_open .open_container .youtube iframe {
+    display:none;/* 모두 숨기기 */
+    width:900px;
+}
+#wrap main .studio_wrap .studio_open .open_container .youtube iframe:first-child {
+    display:block;
+}
+/* =====================3. 삼립스튜디오 - (고정) 하단 링크 */
+#wrap main .studio_wrap .youtube_link {
+    display:flex; flex-flow:row nowrap; align-items:center;
+    border:1px solid #aaa;
+    padding:20px 60px;
+    width:max-content; margin:0 auto;
+}
+#wrap main .studio_wrap .youtube_link img {}
+#wrap main .studio_wrap .youtube_link em {}
+/* =====================3. 삼립스튜디오 - (고정) 하단 링크(hover) */
+#wrap main .studio_wrap .youtube_link:hover {background-color:#000;}
+#wrap main .studio_wrap .youtube_link:hover img {filter:invert(100%);}
+#wrap main .studio_wrap .youtube_link:hover em {color:#fff;}
+
